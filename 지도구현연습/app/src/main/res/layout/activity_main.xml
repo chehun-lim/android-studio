@@ -6,12 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    val mapView = MapView(this)
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+    </RelativeLayout>
 
-    mapView.setDaumMapApiKey("0de42907e6842389a29287d461c6ea70")
-
-    val mapViewContainer = map_view
-    mapViewContainer.addView(mapView)
 
 
 
