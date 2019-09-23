@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kakao.sdk.link.sample.test">
+
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="29" />
+
+    <application android:debuggable="true" >
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+                     android:targetPackage="com.kakao.sdk.link.sample"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for com.kakao.sdk.link.sample"/>
+</manifest>

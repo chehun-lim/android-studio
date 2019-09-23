@@ -1,0 +1,4 @@
+#Sun Sep 22 21:31:00 KST 2019
+base.0=C\:\\Users\\chehun\\Downloads\\kakao-android-sdk-project-1.22.0-full\\applications\\kakao-open-android-sdk-sample\\build\\intermediates\\dex\\productionDebug\\mergeDexProductionDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

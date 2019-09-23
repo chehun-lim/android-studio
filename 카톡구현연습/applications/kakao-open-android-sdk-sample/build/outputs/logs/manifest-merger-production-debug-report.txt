@@ -1,0 +1,639 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7d703dbedb9605554883dee52cf0586d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:kakaotalk] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaotalk\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:kakaostory] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaostory\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:push] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:17.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\aed33540c0beb781748f9d88fe5ebb55\firebase-core-17.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\2e82c7ddc371a8ca959016c8185da720\firebase-analytics-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0ee948cba9d3357fb6d5b06e8b100f67\firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4df1b643c22ccdd6c7a3142d1a39d551\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7367de728c34807f2889197d7270a63d\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\907996a65a19811232522ff302255f08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\b288a7bf7a1f8f8e04a53ff57f1edcff\play-services-measurement-sdk-17.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c238bb33a945468b7a2ce1c3f451bc30\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78e24cac32e0e959eadc868cfe0381e3\play-services-measurement-base-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01ab12eaaabf2ece45ea96b323faf176\play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [:libraries:friends] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\friends\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:usermgmt] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\usermgmt\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+	package
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:3:5-35
+	android:versionName
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:1-153:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:23:5-67
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:9:5-151:19
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:17.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\aed33540c0beb781748f9d88fe5ebb55\firebase-core-17.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\aed33540c0beb781748f9d88fe5ebb55\firebase-core-17.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\2e82c7ddc371a8ca959016c8185da720\firebase-analytics-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\2e82c7ddc371a8ca959016c8185da720\firebase-analytics-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0ee948cba9d3357fb6d5b06e8b100f67\firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0ee948cba9d3357fb6d5b06e8b100f67\firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7367de728c34807f2889197d7270a63d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7367de728c34807f2889197d7270a63d\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\907996a65a19811232522ff302255f08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\907996a65a19811232522ff302255f08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\b288a7bf7a1f8f8e04a53ff57f1edcff\play-services-measurement-sdk-17.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\b288a7bf7a1f8f8e04a53ff57f1edcff\play-services-measurement-sdk-17.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c238bb33a945468b7a2ce1c3f451bc30\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c238bb33a945468b7a2ce1c3f451bc30\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78e24cac32e0e959eadc868cfe0381e3\play-services-measurement-base-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78e24cac32e0e959eadc868cfe0381e3\play-services-measurement-base-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01ab12eaaabf2ece45ea96b323faf176\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01ab12eaaabf2ece45ea96b323faf176\play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
+MERGED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-20:19
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:15:9-36
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:13:9-41
+	android:icon
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:12:9-55
+	android:allowBackup
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:11:9-36
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:16:9-68
+	android:networkSecurityConfig
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:14:9-69
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:10:9-49
+meta-data#com.kakao.sdk.Phase
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:17:9-19:51
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:19:13-48
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:18:13-47
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:20:9-22:53
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:22:13-50
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:21:13-48
+uses-library#org.apache.http.legacy
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:24:9-26:40
+	android:required
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:25:13-50
+activity#com.kakao.sdk.sample.SplashActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:28:9-37:20
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:30:13-45
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:31:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:29:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:35:27-74
+activity#com.kakao.sdk.sample.common.RootLoginActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:38:9-42:69
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:41:13-43
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:40:13-59
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:42:13-66
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:39:13-53
+activity#com.kakao.sdk.sample.common.SampleSignupActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:43:9-47:75
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:46:13-43
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:45:13-59
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:47:13-72
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:44:13-56
+activity#com.kakao.sdk.sample.KakaoServiceListActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:48:9-50:46
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:50:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:49:13-53
+activity#com.kakao.sdk.sample.kakaostory.KakaoStoryFriendListActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:54:9-58:52
+	android:screenOrientation
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:58:13-49
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:57:13-43
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:56:13-59
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:55:13-68
+activity#com.kakao.sdk.sample.kakaostory.KakaoStoryMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:59:9-73:20
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:62:13-43
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:61:13-74
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:60:13-62
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaostory_host+data:scheme:@string/kakao_scheme
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:63:13-72:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:17-69
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:17-76
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:17-78
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:27-75
+data
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:69:17-71:61
+	android:host
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:70:21-59
+	android:scheme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:71:21-58
+activity#com.kakao.sdk.sample.kakaotalk.KakaoTalkMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:77:9-92:20
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:80:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:81:13-55
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:79:13-59
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:78:13-60
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaotalk_host+data:scheme:@string/kakao_scheme
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:82:13-91:29
+activity#com.kakao.sdk.sample.kakaotalk.KakaoTalkFriendListActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:93:9-97:67
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:96:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:97:13-55
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:95:13-59
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:94:13-66
+activity#com.kakao.sdk.sample.kakaotalk.KakaoTalkChatListActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:98:9-102:67
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:101:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:102:13-55
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:100:13-59
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:99:13-64
+activity#com.kakao.sdk.sample.push.PushMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:103:9-106:46
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:106:13-43
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:105:13-59
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:104:13-50
+service#com.kakao.sdk.sample.push.SampleFirebaseMessagingService
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:108:9-112:19
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:108:18-69
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:109:13-111:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:17-78
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:25-75
+receiver#com.kakao.auth.TokenAlarmReceiver
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:114:9-79
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:114:19-67
+activity#com.kakao.sdk.sample.usermgmt.UsermgmtMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:119:9-123:70
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:122:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:123:13-67
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:121:13-74
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:120:13-58
+activity#com.kakao.sdk.sample.friends.FriendsMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:127:9-131:70
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:130:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:131:13-67
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:129:13-74
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:128:13-56
+activity#com.kakao.sdk.sample.common.LoginFragmentActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:133:9-141:20
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:137:13-67
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:135:13-66
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:136:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:134:13-57
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:138:13-140:81
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:140:17-78
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:139:17-63
+activity#com.kakao.sdk.sample.common.SampleLoginActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:142:9-150:20
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:146:13-87
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:144:13-64
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:145:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:143:13-75
+uses-sdk
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7d703dbedb9605554883dee52cf0586d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7d703dbedb9605554883dee52cf0586d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:kakaotalk] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaotalk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:kakaotalk] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaotalk\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:kakaostory] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaostory\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:kakaostory] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaostory\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:push] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:push] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:17.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\aed33540c0beb781748f9d88fe5ebb55\firebase-core-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\aed33540c0beb781748f9d88fe5ebb55\firebase-core-17.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\2e82c7ddc371a8ca959016c8185da720\firebase-analytics-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\2e82c7ddc371a8ca959016c8185da720\firebase-analytics-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0ee948cba9d3357fb6d5b06e8b100f67\firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0ee948cba9d3357fb6d5b06e8b100f67\firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4df1b643c22ccdd6c7a3142d1a39d551\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4df1b643c22ccdd6c7a3142d1a39d551\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7367de728c34807f2889197d7270a63d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7367de728c34807f2889197d7270a63d\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\907996a65a19811232522ff302255f08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\907996a65a19811232522ff302255f08\firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\b288a7bf7a1f8f8e04a53ff57f1edcff\play-services-measurement-sdk-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\b288a7bf7a1f8f8e04a53ff57f1edcff\play-services-measurement-sdk-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c238bb33a945468b7a2ce1c3f451bc30\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c238bb33a945468b7a2ce1c3f451bc30\play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78e24cac32e0e959eadc868cfe0381e3\play-services-measurement-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78e24cac32e0e959eadc868cfe0381e3\play-services-measurement-base-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01ab12eaaabf2ece45ea96b323faf176\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01ab12eaaabf2ece45ea96b323faf176\play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:friends] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\friends\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:friends] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\friends\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:usermgmt] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\usermgmt\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:usermgmt] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\usermgmt\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:22-65
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:29:9-35:19
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:28:13-84
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:25-78
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\f56033f22c1d042d8a9812d6719a1d24\play-services-measurement-impl-17.0.0\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\10a5fda1e84f7ca9598261fddb1fb1f9\play-services-measurement-sdk-api-17.0.0\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
+ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-19:20
+	android:label
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-59
+	android:launchMode
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-43
+	android:windowSoftInputMode
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-55
+	android:exported
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+	android:configChanges
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-59
+	android:name
+		ADDED from [:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-86

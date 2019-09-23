@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Automatically generated file. DO NOT MODIFY -->
+
+    <!-- Values from product flavor: production -->
+    <string name="kakao_app_key" translatable="false">dd4e9cb75815cbdf7d87ed721a659baf</string>
+    <string name="kakao_phase" translatable="false">production</string>
+    <string name="kakao_scheme" translatable="false">kakaodd4e9cb75815cbdf7d87ed721a659baf</string>
+
+</resources>

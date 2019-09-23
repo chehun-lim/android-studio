@@ -1,0 +1,12 @@
+R_DEF: Internal format may change without notice
+local
+id progress_bar
+id webview
+layout activity_kakao_webview
+string auth_code_cancel
+string button_for_ssl_go_back
+string button_for_ssl_go_forward
+string core_com_kakao_sdk_loading
+string image_upload_chooser_text
+string message_for_ssl_warning
+string title_for_ssl_warning

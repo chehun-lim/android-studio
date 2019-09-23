@@ -1,0 +1,208 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+MERGED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7b6a3296cd35b4719084f50de6c7dc1d\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\615d86631396136572fef947b456b987\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\722f66e2a2696b038185d38c6e723ae4\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c13acc805f9e88aec2b831712f4adba2\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+	package
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:3:11-46
+	android:versionName
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:1-38:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:5:5-66
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:8:5-36:19
+MERGED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-19:19
+MERGED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-19:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7b6a3296cd35b4719084f50de6c7dc1d\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7b6a3296cd35b4719084f50de6c7dc1d\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:12:9-36
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:11:9-41
+	android:icon
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:10:9-47
+	android:allowBackup
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:9:9-36
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:13:9-67
+meta-data#com.kakao.sdk.Phase
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:14:9-16:51
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:16:13-48
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:15:13-47
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:17:9-19:52
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:19:13-50
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:18:13-48
+activity#com.kakao.sdk.navi.sample.SplashActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:24:19-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:26:17-68
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:28:17-76
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:28:27-74
+activity#com.kakao.sdk.navi.sample.KakaoNaviActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:31:9-35:20
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:33:13-56
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:34:13-47
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:32:13-46
+uses-sdk
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+MERGED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7b6a3296cd35b4719084f50de6c7dc1d\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\7b6a3296cd35b4719084f50de6c7dc1d\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\615d86631396136572fef947b456b987\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\615d86631396136572fef947b456b987\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\722f66e2a2696b038185d38c6e723ae4\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\722f66e2a2696b038185d38c6e723ae4\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c13acc805f9e88aec2b831712f4adba2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c13acc805f9e88aec2b831712f4adba2\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+activity#com.kakao.kakaonavi.KakaoNaviWebViewActivity
+ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-18:20
+	android:launchMode
+		ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-43
+	android:windowSoftInputMode
+		ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-55
+	android:configChanges
+		ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-59
+	android:theme
+		ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-72
+	android:name
+		ADDED from [:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-72

@@ -1,0 +1,57 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.test.common.test" >
+4
+5    <uses-sdk
+5-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:11:5-15:76
+10        android:name="android.test.InstrumentationTestRunner"
+10-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:11:22-75
+11        android:functionalTest="false"
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:13:22-53
+13        android:label="Tests for com.kakao.test.common.test"
+13-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:15:22-74
+14        android:targetPackage="com.kakao.test.common.test" />
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:12:22-72
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-67
+16-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-64
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-81
+17-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-78
+18    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+18-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-81
+18-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-78
+19
+20    <application
+20-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:7:5-9:19
+21        android:allowBackup="false"
+21-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:9-36
+22        android:debuggable="true"
+22-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:7:18-43
+23        android:supportsRtl="false"
+23-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-36
+24        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+24-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-68
+25        <uses-library android:name="android.test.runner" />
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:8:9-60
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger1150338664275664430.xml:8:23-57
+26
+27        <meta-data
+27-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-21:43
+28            android:name="com.kakao.sdk.AppKey"
+28-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-48
+29            android:value="1234567890A" />
+29-->[__tested_artifact__::libraries:test-common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\test-common\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-40
+30    </application>
+31
+32</manifest>

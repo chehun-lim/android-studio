@@ -1,0 +1,439 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.sdk.sample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:7:5-80
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:7:22-77
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:5-79
+13-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:22-76
+14    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+14-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:5-68
+14-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:22-65
+15    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+15-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:5-82
+15-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:22-79
+16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+16-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+16-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+17
+18    <application
+18-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:9:5-151:19
+19        android:name="com.kakao.sdk.sample.common.GlobalApplication"
+19-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:10:9-49
+20        android:allowBackup="false"
+20-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:11:9-36
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+22        android:debuggable="true"
+23        android:icon="@drawable/kakaolink_sample_icon"
+23-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:12:9-55
+24        android:label="@string/app_name"
+24-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:13:9-41
+25        android:networkSecurityConfig="@xml/network_security_config"
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:14:9-69
+26        android:supportsRtl="false"
+26-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:15:9-36
+27        android:testOnly="true"
+28        android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+28-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:16:9-68
+29        <meta-data
+29-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:17:9-19:51
+30            android:name="com.kakao.sdk.Phase"
+30-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:18:13-47
+31            android:value="@string/kakao_phase" />
+31-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:19:13-48
+32        <meta-data
+32-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:20:9-22:53
+33            android:name="com.kakao.sdk.AppKey"
+33-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:21:13-48
+34            android:value="@string/kakao_app_key" />
+34-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:22:13-50
+35
+36        <uses-library
+36-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:24:9-26:40
+37            android:name="org.apache.http.legacy"
+37-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:25:13-50
+38            android:required="false" />
+38-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:26:13-37
+39
+40        <activity
+40-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:28:9-37:20
+41            android:name="com.kakao.sdk.sample.SplashActivity"
+41-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:29:13-43
+42            android:label="@string/app_name"
+42-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:30:13-45
+43            android:launchMode="singleTop" >
+43-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:31:13-43
+44            <intent-filter>
+44-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:32:13-36:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:33:17-69
+45-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:33:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:35:17-77
+47-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:35:27-74
+48            </intent-filter>
+49        </activity>
+50        <activity
+50-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:38:9-42:69
+51            android:name="com.kakao.sdk.sample.common.RootLoginActivity"
+51-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:39:13-53
+52            android:configChanges="screenSize|orientation"
+52-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:40:13-59
+53            android:launchMode="singleTop"
+53-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:41:13-43
+54            android:theme="@android:style/Theme.Light.NoTitleBar" />
+54-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:42:13-66
+55        <activity
+55-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:43:9-47:75
+56            android:name="com.kakao.sdk.sample.common.SampleSignupActivity"
+56-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:44:13-56
+57            android:configChanges="screenSize|orientation"
+57-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:45:13-59
+58            android:launchMode="singleTop"
+58-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:46:13-43
+59            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+59-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:47:13-72
+60        <activity
+60-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:48:9-50:46
+61            android:name="com.kakao.sdk.sample.KakaoServiceListActivity"
+61-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:49:13-53
+62            android:launchMode="singleTop" />
+62-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:50:13-43
+63
+64        <!-- kakaoStory를 위한 activity -->
+65
+66        <activity
+66-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:54:9-58:52
+67            android:name="com.kakao.sdk.sample.kakaostory.KakaoStoryFriendListActivity"
+67-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:55:13-68
+68            android:configChanges="screenSize|orientation"
+68-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:56:13-59
+69            android:launchMode="singleTop"
+69-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:57:13-43
+70            android:screenOrientation="portrait" />
+70-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:58:13-49
+71        <activity
+71-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:59:9-73:20
+72            android:name="com.kakao.sdk.sample.kakaostory.KakaoStoryMainActivity"
+72-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:60:13-62
+73            android:configChanges="keyboardHidden|orientation|screenSize"
+73-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:61:13-74
+74            android:launchMode="singleTop" >
+74-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:62:13-43
+75            <intent-filter>
+75-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:63:13-72:29
+76                <action android:name="android.intent.action.VIEW" />
+76-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:17-69
+76-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:25-66
+77
+78                <category android:name="android.intent.category.DEFAULT" />
+78-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:17-76
+78-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:27-73
+79                <category android:name="android.intent.category.BROWSABLE" />
+79-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:17-78
+79-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:27-75
+80
+81                <data
+81-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:69:17-71:61
+82                    android:host="@string/kakaostory_host"
+82-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:70:21-59
+83                    android:scheme="@string/kakao_scheme" />
+83-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:71:21-58
+84            </intent-filter>
+85        </activity>
+86
+87        <!-- kakaoTalk를 위한 activity -->
+88
+89        <activity
+89-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:77:9-92:20
+90            android:name="com.kakao.sdk.sample.kakaotalk.KakaoTalkMainActivity"
+90-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:78:13-60
+91            android:configChanges="screenSize|orientation"
+91-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:79:13-59
+92            android:launchMode="singleTop"
+92-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:80:13-43
+93            android:windowSoftInputMode="adjustResize" >
+93-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:81:13-55
+94            <intent-filter>
+94-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:82:13-91:29
+95                <action android:name="android.intent.action.VIEW" />
+95-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:17-69
+95-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:64:25-66
+96
+97                <category android:name="android.intent.category.DEFAULT" />
+97-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:17-76
+97-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:66:27-73
+98                <category android:name="android.intent.category.BROWSABLE" />
+98-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:17-78
+98-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:67:27-75
+99
+100                <data
+100-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:69:17-71:61
+101                    android:host="@string/kakaotalk_host"
+101-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:70:21-59
+102                    android:scheme="@string/kakao_scheme" />
+102-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:71:21-58
+103            </intent-filter>
+104        </activity>
+105        <activity
+105-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:93:9-97:67
+106            android:name="com.kakao.sdk.sample.kakaotalk.KakaoTalkFriendListActivity"
+106-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:94:13-66
+107            android:configChanges="screenSize|orientation"
+107-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:95:13-59
+108            android:launchMode="singleTop"
+108-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:96:13-43
+109            android:windowSoftInputMode="adjustResize" />
+109-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:97:13-55
+110        <activity
+110-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:98:9-102:67
+111            android:name="com.kakao.sdk.sample.kakaotalk.KakaoTalkChatListActivity"
+111-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:99:13-64
+112            android:configChanges="screenSize|orientation"
+112-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:100:13-59
+113            android:launchMode="singleTop"
+113-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:101:13-43
+114            android:windowSoftInputMode="adjustResize" />
+114-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:102:13-55
+115        <activity
+115-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:103:9-106:46
+116            android:name="com.kakao.sdk.sample.push.PushMainActivity"
+116-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:104:13-50
+117            android:configChanges="screenSize|orientation"
+117-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:105:13-59
+118            android:launchMode="singleTop" />
+118-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:106:13-43
+119
+120        <service android:name="com.kakao.sdk.sample.push.SampleFirebaseMessagingService" >
+120-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:108:9-112:19
+120-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:108:18-69
+121            <intent-filter>
+121-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:109:13-111:29
+122                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+122-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:17-78
+122-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:25-75
+123            </intent-filter>
+124        </service>
+125
+126        <receiver android:name="com.kakao.auth.TokenAlarmReceiver" />
+126-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:114:9-79
+126-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:114:19-67
+127
+128        <!-- usrmgmt를 위한 activity -->
+129
+130        <activity
+130-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:119:9-123:70
+131            android:name="com.kakao.sdk.sample.usermgmt.UsermgmtMainActivity"
+131-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:120:13-58
+132            android:configChanges="keyboardHidden|orientation|screenSize"
+132-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:121:13-74
+133            android:launchMode="singleTop"
+133-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:122:13-43
+134            android:windowSoftInputMode="adjustResize|stateHidden" />
+134-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:123:13-67
+135
+136        <!-- friends를 위한 activity -->
+137
+138        <activity
+138-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:127:9-131:70
+139            android:name="com.kakao.sdk.sample.friends.FriendsMainActivity"
+139-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:128:13-56
+140            android:configChanges="keyboardHidden|orientation|screenSize"
+140-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:129:13-74
+141            android:launchMode="singleTop"
+141-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:130:13-43
+142            android:windowSoftInputMode="adjustResize|stateHidden" />
+142-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:131:13-67
+143        <activity
+143-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:133:9-141:20
+144            android:name="com.kakao.sdk.sample.common.LoginFragmentActivity"
+144-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:134:13-57
+145            android:label="@string/title_activity_login_fragment"
+145-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:135:13-66
+146            android:launchMode="singleTop"
+146-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:136:13-43
+147            android:parentActivityName="com.kakao.sdk.sample.common.RootLoginActivity" >
+147-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:137:13-67
+148            <meta-data
+148-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:138:13-140:81
+149                android:name="android.support.PARENT_ACTIVITY"
+149-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:139:17-63
+150                android:value="com.kakao.sdk.sample.common.RootLoginActivity" />
+150-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:140:17-78
+151        </activity>
+152        <activity
+152-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:142:9-150:20
+153            android:name="com.kakao.sdk.sample.common.SampleLoginActivity"
+153-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:143:13-75
+154            android:label="@string/title_activity_sample_login"
+154-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:144:13-64
+155            android:launchMode="singleTop"
+155-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:145:13-43
+156            android:parentActivityName="com.kakao.sdk.sample.common.RootLoginActivity" >
+156-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:146:13-87
+157            <meta-data
+157-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:138:13-140:81
+158                android:name="android.support.PARENT_ACTIVITY"
+158-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:139:17-63
+159                android:value="com.kakao.sdk.sample.common.RootLoginActivity" />
+159-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:140:17-78
+160        </activity>
+161        <!--
+162             FirebaseMessagingService performs security checks at runtime,
+163             but set to not exported to explicitly avoid allowing another app to call it.
+164        -->
+165        <service
+165-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+166            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+166-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+167            android:exported="false" >
+167-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+168            <intent-filter android:priority="-500" >
+168-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:109:13-111:29
+169                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+169-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:17-78
+169-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-sdk-sample\src\main\AndroidManifest.xml:110:25-75
+170            </intent-filter>
+171        </service>
+172        <service
+172-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:27:9-33:19
+173            android:name="com.google.firebase.components.ComponentDiscoveryService"
+173-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:28:13-84
+174            android:exported="false" >
+174-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:29:13-37
+175            <meta-data
+175-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+176                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+176-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+177                android:value="com.google.firebase.components.ComponentRegistrar" />
+177-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+178            <meta-data
+178-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+179                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+179-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+181        </service>
+182
+183        <receiver
+183-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+184            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+184-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+185            android:exported="true"
+185-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+186            android:permission="com.google.android.c2dm.permission.SEND" >
+186-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+187            <intent-filter>
+187-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+188                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+188-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:17-81
+188-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:25-78
+189            </intent-filter>
+190        </receiver>
+191
+192        <activity
+192-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+193            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+193-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+194            android:exported="false"
+194-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+195            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+195-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+196
+197        <provider
+197-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+198            android:name="com.google.firebase.provider.FirebaseInitProvider"
+198-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+199            android:authorities="com.kakao.sdk.sample.firebaseinitprovider"
+199-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+200            android:exported="false"
+200-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+201            android:initOrder="100" />
+201-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+202
+203        <receiver
+203-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+204            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+204-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+205            android:enabled="true"
+205-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+206            android:exported="false" >
+206-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+207        </receiver>
+208        <receiver
+208-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+209            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+209-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+210            android:enabled="true"
+210-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+211            android:exported="true"
+211-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+212            android:permission="android.permission.INSTALL_PACKAGES" >
+212-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+213            <intent-filter>
+213-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+214                <action android:name="com.android.vending.INSTALL_REFERRER" />
+214-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+214-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+215            </intent-filter>
+216        </receiver>
+217
+218        <service
+218-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+219            android:name="com.google.android.gms.measurement.AppMeasurementService"
+219-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+220            android:enabled="true"
+220-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+221            android:exported="false" />
+221-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+222        <service
+222-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+223            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+223-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+224            android:enabled="true"
+224-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+225            android:exported="false"
+225-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+226            android:permission="android.permission.BIND_JOB_SERVICE" />
+226-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+227
+228        <meta-data
+228-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+229            android:name="com.google.android.gms.version"
+229-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+230            android:value="@integer/google_play_services_version" />
+230-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+231
+232        <activity
+232-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-19:20
+233            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+233-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-86
+234            android:configChanges="orientation|screenSize"
+234-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-59
+235            android:exported="false"
+235-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+236            android:label="@string/com_kakao_login_button"
+236-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-59
+237            android:launchMode="singleTop"
+237-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-43
+238            android:windowSoftInputMode="adjustResize" >
+238-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-55
+239        </activity>
+240    </application>
+241
+242</manifest>

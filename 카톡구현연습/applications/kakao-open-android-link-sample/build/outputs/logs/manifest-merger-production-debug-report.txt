@@ -1,0 +1,285 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+MERGED from [:libraries:kakaolink] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaolink\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [:libraries:plusfriend] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\3664c57cfb52116c500a137fbb5e7237\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01940c7eb6b1449f58a0f1e504e68b3a\browser-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-11:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+	package
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:4:11-46
+	android:versionName
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:3:11-57
+	android:versionCode
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:1-84:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:7:22-77
+application
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:9:5-82:19
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\3664c57cfb52116c500a137fbb5e7237\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\3664c57cfb52116c500a137fbb5e7237\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+	android:supportsRtl
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:13:9-36
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:11:9-38
+	android:allowBackup
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:10:9-36
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:14:9-70
+provider#com.kakao.sdk.link.sample.kakaolink.KakaoLinkSampleProvider
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:15:9-20:53
+	android:grantUriPermissions
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:19:13-47
+	android:authorities
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:17:13-60
+	android:exported
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:18:13-36
+	tools:ignore
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:20:13-51
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:16:13-62
+meta-data#com.kakao.sdk.Phase
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:22:9-24:51
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:24:13-48
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:23:13-47
+meta-data#com.kakao.sdk.AppKey
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:25:9-27:52
+	android:value
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:27:13-50
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:26:13-48
+activity#com.kakao.sdk.link.sample.SplashActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:29:9-38:20
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:31:13-45
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:32:13-44
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:30:13-43
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:34:17-68
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:36:17-76
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:36:27-74
+activity#com.kakao.sdk.link.sample.KakaoServiceListActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:39:9-41:46
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:40:13-53
+activity#com.kakao.sdk.link.sample.storylink.KakaoStoryLinkMainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:44:9-49:45
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:48:13-67
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:46:13-73
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:47:13-43
+	tools:ignore
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:49:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:45:13-65
+activity#com.kakao.sdk.link.sample.kakaolink.KakaoLinkV2MainActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:50:9-66:20
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:54:13-67
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:52:13-58
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:53:13-43
+	tools:ignore
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:55:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:51:13-62
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/kakaolink_host+data:scheme:@string/kakao_scheme
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:56:13-65:29
+action#android.intent.action.VIEW
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:57:17-68
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:57:25-66
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:59:17-75
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:59:27-73
+category#android.intent.category.BROWSABLE
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:60:17-77
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:60:27-75
+data
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:62:17-64:60
+	android:host
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:63:21-58
+	android:scheme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:64:21-58
+activity#com.kakao.sdk.link.sample.kakaolink.KakaoLinkOsShareActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:67:9-73:20
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:71:13-67
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:69:13-65
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:70:13-43
+	tools:ignore
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:72:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:68:13-63
+activity#com.kakao.sdk.link.sample.kakaolink.KakaoLinkImageUploadActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:74:9-79:20
+	android:parentActivityName
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:77:13-67
+	android:label
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:76:13-69
+	tools:ignore
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:78:13-43
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:75:13-67
+activity#com.kakao.sdk.link.sample.plusfriend.PlusFriendActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:80:9-81:20
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:80:19-64
+uses-sdk
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+MERGED from [:libraries:kakaolink] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaolink\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:62
+MERGED from [:libraries:kakaolink] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaolink\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:62
+MERGED from [:libraries:plusfriend] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:62
+MERGED from [:libraries:plusfriend] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-11:62
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\1fcdb2c1b4dc9b5e804720875e8643de\appcompat-1.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\3664c57cfb52116c500a137fbb5e7237\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\3664c57cfb52116c500a137fbb5e7237\constraintlayout-1.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:network] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:message-template] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\message-template\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01940c7eb6b1449f58a0f1e504e68b3a\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\01940c7eb6b1449f58a0f1e504e68b3a\browser-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:common] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\common\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\38afbe13ab40ececc65b49eb4c5dde75\fragment-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c7e6c62473f39e03a1161763f8696508\vectordrawable-animated-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\64f496c0181760fb305839d486b83f13\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\adc996a903c34ebd56964461efdcd2e0\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\eda0040a4c9254df21183a4b5e43ac62\vectordrawable-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\40a260d72fdfce1b75a5fc288b0f75ca\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a7d56679573598e9ab5ca731f9fa0002\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c9076d5bac2c62ec959b56a2a53fde4e\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\0cf069b1876c7df009421fc0e24383f6\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\61edadb5cb47bb16fc3e607b8f276617\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\c75dbf5eb07ad179a5a1acab6eace2c0\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ba80575f8d4df1137e883e31ae601270\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\776355e8be4f817f6ff953c0880fceb3\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ad9a0b5c06dc79cf5387f6ed6f3d8391\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\78d61f548fd80c85b8df26edbc4fa68a\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a942759f431e9d20055c22e98fde34fc\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4d29aa7c0ed4491ff36eb8323a7bdffd\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\74f913a3a18ea5d1affec035b2c2cba2\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\a6c365ef47d2730c3525bc41f7bb0c1f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\ee86aaa9d12995bec640a88a2f3dc139\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d2dbf82347a4f8c4d39dda2be88e023d\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\058a25f7e56a9736826fec82608b5fe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\58bdc056a0d11e71e1805a09dd5ccdc5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\476c05e1be1a214b5ca738fdae086d76\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:libraries:util] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\util\build\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-9:41
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:libraries:kakaolink] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaolink\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:9-59
+	android:targetSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml

@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color bg_login_button
+color bg_login_button_highlighted
+drawable account
+drawable btn_x
+drawable selector_login_button
+drawable story
+drawable talk
+id login_close_button
+id login_close_layout
+id login_list_view
+id login_method_icon
+id login_method_layout
+id login_method_text
+id login_title_text
+layout kakao_login_layout
+layout layout_login_dialog
+layout layout_login_item
+string log_in_text
+string login_method
+style LoginDialog

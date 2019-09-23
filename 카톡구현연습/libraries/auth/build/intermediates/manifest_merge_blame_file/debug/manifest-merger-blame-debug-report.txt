@@ -1,0 +1,32 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.auth"
+4    android:versionCode="82"
+5    android:versionName="1.22.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:5:5-15:19
+12        <activity
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:6:9-13:20
+13            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+13-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:7:13-86
+14            android:configChanges="orientation|screenSize"
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:10:13-59
+15            android:exported="false"
+15-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:12:13-37
+16            android:label="@string/com_kakao_login_button"
+16-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:8:13-59
+17            android:launchMode="singleTop"
+17-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:9:13-43
+18            android:windowSoftInputMode="adjustResize" >
+18-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\src\main\AndroidManifest.xml:11:13-55
+19        </activity>
+20    </application>
+21
+22</manifest>

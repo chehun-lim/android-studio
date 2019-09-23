@@ -1,0 +1,153 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.sdk.link.sample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:6:5-66
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:7:22-77
+13
+14    <application
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:9:5-82:19
+15        android:allowBackup="false"
+15-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:10:9-36
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:icon="@drawable/icon"
+18-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:11:9-38
+19        android:label="@string/app_name"
+19-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:12:9-41
+20        android:supportsRtl="false"
+20-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:13:9-36
+21        android:theme="@android:style/Theme.Holo.Light.DarkActionBar" >
+21-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:14:9-70
+22        <provider
+22-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:15:9-20:53
+23            android:name="com.kakao.sdk.link.sample.kakaolink.KakaoLinkSampleProvider"
+23-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:16:13-62
+24            android:authorities="com.kakao.sdk.link.sample"
+24-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:17:13-60
+25            android:exported="true"
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:18:13-36
+26            android:grantUriPermissions="true" />
+26-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:19:13-47
+27
+28        <meta-data
+28-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:22:9-24:51
+29            android:name="com.kakao.sdk.Phase"
+29-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:23:13-47
+30            android:value="@string/kakao_phase" />
+30-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:24:13-48
+31        <meta-data
+31-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:25:9-27:52
+32            android:name="com.kakao.sdk.AppKey"
+32-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:26:13-48
+33            android:value="@string/kakao_app_key" />
+33-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:27:13-50
+34
+35        <activity
+35-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:29:9-38:20
+36            android:name="com.kakao.sdk.link.sample.SplashActivity"
+36-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:30:13-43
+37            android:label="@string/app_name"
+37-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:31:13-45
+38            android:launchMode="singleTask" >
+38-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:32:13-44
+39            <intent-filter>
+39-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:33:13-37:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:34:17-68
+40-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:34:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:36:17-76
+42-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:36:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:39:9-41:46
+46            android:name="com.kakao.sdk.link.sample.KakaoServiceListActivity"
+46-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:40:13-53
+47            android:launchMode="singleTask" />
+47-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:41:13-44
+48
+49        <!-- kakaoLink를 위한 activity -->
+50        <activity
+50-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:44:9-49:45
+51            android:name="com.kakao.sdk.link.sample.storylink.KakaoStoryLinkMainActivity"
+51-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:45:13-65
+52            android:label="@string/title_activity_kakao_story_link_main"
+52-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:46:13-73
+53            android:launchMode="singleTop"
+53-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:47:13-43
+54            android:parentActivityName="com.kakao.sdk.link.sample.KakaoServiceListActivity" />
+54-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:48:13-67
+55        <activity
+55-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:50:9-66:20
+56            android:name="com.kakao.sdk.link.sample.kakaolink.KakaoLinkV2MainActivity"
+56-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:51:13-62
+57            android:label="@string/title_send_kakao_link"
+57-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:52:13-58
+58            android:launchMode="singleTop"
+58-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:53:13-43
+59            android:parentActivityName="com.kakao.sdk.link.sample.KakaoServiceListActivity" >
+59-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:54:13-67
+60            <intent-filter>
+60-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:56:13-65:29
+61                <action android:name="android.intent.action.VIEW" />
+61-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:57:17-68
+61-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:57:25-66
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:59:17-75
+63-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:59:27-73
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:60:17-77
+64-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:60:27-75
+65
+66                <data
+66-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:62:17-64:60
+67                    android:host="@string/kakaolink_host"
+67-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:63:21-58
+68                    android:scheme="@string/kakao_scheme" />
+68-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:64:21-58
+69            </intent-filter>
+70        </activity>
+71        <activity
+71-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:67:9-73:20
+72            android:name="com.kakao.sdk.link.sample.kakaolink.KakaoLinkOsShareActivity"
+72-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:68:13-63
+73            android:label="@string/title_activity_content_share"
+73-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:69:13-65
+74            android:launchMode="singleTop"
+74-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:70:13-43
+75            android:parentActivityName="com.kakao.sdk.link.sample.KakaoServiceListActivity" >
+75-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:71:13-67
+76        </activity>
+77        <activity
+77-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:74:9-79:20
+78            android:name="com.kakao.sdk.link.sample.kakaolink.KakaoLinkImageUploadActivity"
+78-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:75:13-67
+79            android:label="@string/title_activity_kakao_link_upload"
+79-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:76:13-69
+80            android:parentActivityName="com.kakao.sdk.link.sample.KakaoServiceListActivity" >
+80-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:77:13-67
+81        </activity>
+82        <activity android:name="com.kakao.sdk.link.sample.plusfriend.PlusFriendActivity" >
+82-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:80:9-81:20
+82-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-link-sample\src\main\AndroidManifest.xml:80:19-64
+83        </activity>
+84    </application>
+85
+86</manifest>

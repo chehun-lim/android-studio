@@ -1,0 +1,194 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.push.test" >
+4
+5    <uses-sdk
+5-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:11:5-15:69
+10        android:name="android.test.InstrumentationTestRunner"
+10-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:11:22-75
+11        android:functionalTest="false"
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:13:22-53
+13        android:label="Tests for com.kakao.push.test"
+13-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:15:22-67
+14        android:targetPackage="com.kakao.push.test" />
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:12:22-65
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:22:5-67
+16-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:22:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:5-79
+17-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:23:22-76
+18    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+18-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:5-68
+18-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:24:22-65
+19    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+19-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:5-82
+19-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:26:22-79
+20    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+20-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:5-110
+20-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:26:22-107
+21
+22    <application
+22-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:7:5-9:19
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e965a3b8b8fa6642d67efb2e779990d3\core-1.0.0\AndroidManifest.xml:22:18-86
+24        android:debuggable="true" >
+24-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:7:18-43
+25        <uses-library android:name="android.test.runner" />
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:8:9-60
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\push\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger2516876507963823441.xml:8:23-57
+26        <!--
+27             FirebaseMessagingService performs security checks at runtime,
+28             but set to not exported to explicitly avoid allowing another app to call it.
+29        -->
+30        <service
+30-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:28:9-34:19
+31            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+31-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:29:13-82
+32            android:exported="false" >
+32-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:30:13-37
+33            <intent-filter android:priority="-500" >
+33-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:31:13-33:29
+33-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:31:28-51
+34                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+34-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:32:17-78
+34-->[com.google.firebase:firebase-messaging:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\62ac98115c751ee48cb669f0ac487c4c\firebase-messaging-19.0.1\AndroidManifest.xml:32:25-75
+35            </intent-filter>
+36        </service>
+37        <service
+37-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:27:9-33:19
+38            android:name="com.google.firebase.components.ComponentDiscoveryService"
+38-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:28:13-84
+39            android:exported="false" >
+39-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:29:13-37
+40            <meta-data
+40-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:30:13-32:85
+41                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+41-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:31:17-139
+42                android:value="com.google.firebase.components.ComponentRegistrar" />
+42-->[com.google.android.gms:play-services-measurement-api:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\29d0fe7bfdd53fe22765f5e1bd608666\play-services-measurement-api-17.0.0\AndroidManifest.xml:32:17-82
+43            <meta-data
+43-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:32:13-34:85
+44                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+44-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:33:17-96
+45                android:value="com.google.firebase.components.ComponentRegistrar" />
+45-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:34:17-82
+46        </service>
+47
+48        <receiver
+48-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:37:9-44:20
+49            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+49-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:38:13-78
+50            android:exported="true"
+50-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:39:13-36
+51            android:permission="com.google.android.c2dm.permission.SEND" >
+51-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:40:13-73
+52            <intent-filter>
+52-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:41:13-43:29
+53                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+53-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:17-81
+53-->[com.google.firebase:firebase-iid:19.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\d4f3f589e38cd67f7bfaa400b6430dd1\firebase-iid-19.0.1\AndroidManifest.xml:42:25-78
+54            </intent-filter>
+55        </receiver>
+56
+57        <provider
+57-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:12:9-16:39
+58            android:name="com.google.firebase.provider.FirebaseInitProvider"
+58-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:13:13-77
+59            android:authorities="com.kakao.push.test.firebaseinitprovider"
+59-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:14:13-72
+60            android:exported="false"
+60-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:15:13-37
+61            android:initOrder="100" />
+61-->[com.google.firebase:firebase-common:18.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\901ee9ba78923b0f4a80c7c4f30483a5\firebase-common-18.0.0\AndroidManifest.xml:16:13-36
+62
+63        <activity
+63-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+64            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+64-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+65            android:exported="false"
+65-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+66            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+66-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4e9652318cec4f9ce728a29c8fe9474e\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+67
+68        <receiver
+68-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:29:9-33:20
+69            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+69-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:30:13-85
+70            android:enabled="true"
+70-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:31:13-35
+71            android:exported="false" >
+71-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:32:13-37
+72        </receiver>
+73        <receiver
+73-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:34:9-42:20
+74            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+74-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:35:13-100
+75            android:enabled="true"
+75-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:36:13-35
+76            android:exported="true"
+76-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:37:13-36
+77            android:permission="android.permission.INSTALL_PACKAGES" >
+77-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:38:13-69
+78            <intent-filter>
+78-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:39:13-41:29
+79                <action android:name="com.android.vending.INSTALL_REFERRER" />
+79-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:17-79
+79-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:40:25-76
+80            </intent-filter>
+81        </receiver>
+82
+83        <service
+83-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:44:9-47:40
+84            android:name="com.google.android.gms.measurement.AppMeasurementService"
+84-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:45:13-84
+85            android:enabled="true"
+85-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:46:13-35
+86            android:exported="false" />
+86-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:47:13-37
+87        <service
+87-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:48:9-52:72
+88            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+88-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:49:13-87
+89            android:enabled="true"
+89-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:50:13-35
+90            android:exported="false"
+90-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:51:13-37
+91            android:permission="android.permission.BIND_JOB_SERVICE" />
+91-->[com.google.android.gms:play-services-measurement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\efd245095fe4b6ca8a99e3812519f2b3\play-services-measurement-17.0.0\AndroidManifest.xml:52:13-69
+92
+93        <meta-data
+93-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+94            android:name="com.google.android.gms.version"
+94-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+95            android:value="@integer/google_play_services_version" />
+95-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\e38feaf6399173bb3ec19d3d8979d457\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+96
+97        <activity
+97-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-19:20
+98            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+98-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-86
+99            android:configChanges="orientation|screenSize"
+99-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-59
+100            android:exported="false"
+100-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-37
+101            android:label="@string/com_kakao_login_button"
+101-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-59
+102            android:launchMode="singleTop"
+102-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-43
+103            android:windowSoftInputMode="adjustResize" >
+103-->[:libraries:auth] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\auth\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-55
+104        </activity>
+105    </application>
+106
+107</manifest>

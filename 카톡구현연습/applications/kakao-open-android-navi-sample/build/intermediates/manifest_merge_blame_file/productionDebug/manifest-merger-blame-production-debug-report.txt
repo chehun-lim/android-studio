@@ -1,0 +1,89 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.sdk.navi.sample"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:5:5-66
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:5:22-64
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:6:5-78
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:6:22-76
+13
+14    <application
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:8:5-36:19
+15        android:allowBackup="false"
+15-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:9:9-36
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.0.1] C:\Users\chehun\.gradle\caches\transforms-2\files-2.1\4c636cbe4bc905b957d0ab2f71722ddd\core-1.0.1\AndroidManifest.xml:22:18-86
+17        android:debuggable="true"
+18        android:icon="@drawable/navi_icon_144"
+18-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:10:9-47
+19        android:label="@string/app_name"
+19-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:11:9-41
+20        android:supportsRtl="false"
+20-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:12:9-36
+21        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+21-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:13:9-67
+22        <meta-data
+22-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:14:9-16:51
+23            android:name="com.kakao.sdk.Phase"
+23-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:15:13-47
+24            android:value="@string/kakao_phase" />
+24-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:16:13-48
+25        <meta-data
+25-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:17:9-19:52
+26            android:name="com.kakao.sdk.AppKey"
+26-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:18:13-48
+27            android:value="@string/kakao_app_key" />
+27-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:19:13-50
+28        <!-- <meta-data -->
+29        <!-- android:name="com.kakao.sdk.kakaonavi.useWebView" -->
+30        <!-- android:value="false" /> -->
+31
+32        <activity android:name="com.kakao.sdk.navi.sample.SplashActivity" >
+32-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:24:9-30:20
+32-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:24:19-49
+33            <intent-filter>
+33-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:25:13-29:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:26:17-68
+34-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:26:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:28:17-76
+36-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:28:27-74
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:31:9-35:20
+40            android:name="com.kakao.sdk.navi.sample.KakaoNaviActivity"
+40-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:32:13-46
+41            android:label="@string/title_activity_main"
+41-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:33:13-56
+42            android:theme="@style/NoActionBar" >
+42-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\applications\kakao-open-android-navi-sample\src\main\AndroidManifest.xml:34:13-47
+43        </activity>
+44        <activity
+44-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-18:20
+45            android:name="com.kakao.kakaonavi.KakaoNaviWebViewActivity"
+45-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-72
+46            android:configChanges="orientation|screenSize"
+46-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-59
+47            android:launchMode="singleTop"
+47-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-43
+48            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+48-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-72
+49            android:windowSoftInputMode="adjustResize" >
+49-->[:libraries:kakaonavi] C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-55
+50        </activity>
+51    </application>
+52
+53</manifest>

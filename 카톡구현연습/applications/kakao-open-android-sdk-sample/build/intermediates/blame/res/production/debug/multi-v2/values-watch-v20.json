@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\chehun\\Downloads\\kakao-android-sdk-project-1.22.0-full\\applications\\kakao-open-android-sdk-sample\\build\\intermediates\\incremental\\mergeProductionDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\chehun\\.gradle\\caches\\transforms-2\\files-2.1\\1fcdb2c1b4dc9b5e804720875e8643de\\appcompat-1.0.2\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,214,385",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "209,380,553"
+                    }
+                }
+            ]
+        }
+    ]
+}

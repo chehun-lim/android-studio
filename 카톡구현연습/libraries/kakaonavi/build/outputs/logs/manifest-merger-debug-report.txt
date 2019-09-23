@@ -1,0 +1,51 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+	package
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:3:11-40
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:1-15:12
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:5:5-13:19
+activity#com.kakao.kakaonavi.KakaoNaviWebViewActivity
+ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:6:9-12:20
+	android:launchMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:8:13-43
+	android:windowSoftInputMode
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:9:13-55
+	android:configChanges
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:10:13-59
+	android:theme
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:11:13-72
+	android:name
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:7:13-53
+uses-sdk
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		ADDED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml

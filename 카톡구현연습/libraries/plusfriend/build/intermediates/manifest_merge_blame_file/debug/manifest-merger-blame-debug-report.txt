@@ -1,0 +1,17 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.kakao.plusfriend"
+5    android:versionCode="82"
+6    android:versionName="1.22.0" >
+7
+8    <uses-sdk
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\src\main\AndroidManifest.xml:4:5-68
+9        android:minSdkVersion="16"
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\src\main\AndroidManifest.xml:4:5-68
+10        android:targetSdkVersion="29"
+10-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\src\main\AndroidManifest.xml:4:5-68
+11        tools:overrideLibrary="android.support.customtabs" />
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\plusfriend\src\main\AndroidManifest.xml:4:15-65
+12
+13</manifest>

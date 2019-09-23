@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="permission_error_app_location">Turn on location permission on app permission settings.</string>
+    <string name="permission_error_cancel">Cancel</string>
+    <string name="permission_error_location">Turn on your device\'s location permission.</string>
+    <string name="permission_error_okay">Okay</string>
+    <string name="permission_error_title">Location permission error</string>
+</resources>

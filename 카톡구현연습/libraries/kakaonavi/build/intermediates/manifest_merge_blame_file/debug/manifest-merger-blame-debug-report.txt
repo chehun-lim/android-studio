@@ -1,0 +1,30 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.kakao.kakaonavi"
+4    android:versionCode="82"
+5    android:versionName="1.22.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:5:5-13:19
+12        <activity
+12-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:6:9-12:20
+13            android:name="com.kakao.kakaonavi.KakaoNaviWebViewActivity"
+13-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:7:13-53
+14            android:configChanges="orientation|screenSize"
+14-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:10:13-59
+15            android:launchMode="singleTop"
+15-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:8:13-43
+16            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+16-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:11:13-72
+17            android:windowSoftInputMode="adjustResize" >
+17-->C:\Users\chehun\Downloads\kakao-android-sdk-project-1.22.0-full\libraries\kakaonavi\src\main\AndroidManifest.xml:9:13-55
+18        </activity>
+19    </application>
+20
+21</manifest>

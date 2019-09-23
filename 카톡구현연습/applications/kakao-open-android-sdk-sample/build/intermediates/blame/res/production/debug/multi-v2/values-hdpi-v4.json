@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\chehun\\Downloads\\kakao-android-sdk-project-1.22.0-full\\applications\\kakao-open-android-sdk-sample\\build\\intermediates\\incremental\\mergeProductionDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\chehun\\.gradle\\caches\\transforms-2\\files-2.1\\1fcdb2c1b4dc9b5e804720875e8643de\\appcompat-1.0.2\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
