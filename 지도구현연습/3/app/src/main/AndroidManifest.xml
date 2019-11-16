@@ -17,9 +17,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".MapActivity">
+        </activity>
+
+
         <meta-data
             android:name="com.naver.maps.map.CLIENT_ID"
             android:value="d9qj359o1u" />
+        <meta-data android:name="com.kakao.sdk.AppKey"
+            android:value="0de42907e6842389a29287d461c6ea70" />
+
     </application>
 
 </manifest>

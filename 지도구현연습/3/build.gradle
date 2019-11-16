@@ -12,6 +12,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:4.3.2'
 
 
     }
@@ -25,6 +26,16 @@ allprojects {
         // 네이버 지도 저장소
         maven {
             url 'https://navercorp.bintray.com/maps'
+        }
+    }
+}
+
+subprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+        maven{
+            url "https://maven.google.com"
         }
     }
 }
