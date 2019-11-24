@@ -22,9 +22,10 @@ class KakaoLink {
                 .newBuilder(
                     ContentObject.newBuilder(
                         "어디서 만나지?",
-                        "http://mud-kage.kakao.co.kr/dn/NTmhS/btqfEUdFAUf/FjKzkZsnoeE4o19klTOVI1/openlink_640x640s.jpg",
+                        "https://postfiles.pstatic.net/MjAxOTExMjRfMjgy/MDAxNTc0NTgzOTE1MDYy.UKpceVxCgiNVXpLc11ALfszlkuKTWviD9itXOrt7p9sg.ILVLigju-GyRRvIDckb4G1HLinNhlZV3H8prKkwkVzQg.PNG.lsk9955/imtem.png?type=w580",
                         LinkObject.newBuilder()
                             .setWebUrl("https://developers.kakao.com").setMobileWebUrl("https://developers.kakao.com").build()
+
                     )
                         .setDescrption("약속장소 정하기!").build()
                 )

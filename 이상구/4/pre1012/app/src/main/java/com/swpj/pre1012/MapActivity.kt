@@ -8,9 +8,6 @@ import androidx.annotation.UiThread
 import androidx.fragment.app.FragmentActivity
 import com.google.firebase.database.FirebaseDatabase
 import com.naver.maps.geometry.LatLng
-import com.naver.maps.map.MapFragment
-import com.naver.maps.map.NaverMap
-import com.naver.maps.map.OnMapReadyCallback
 import com.naver.maps.map.overlay.Marker
 import kotlinx.android.synthetic.main.activity_map.*
 import android.graphics.Point
@@ -19,11 +16,19 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior.setTag
 import androidx.core.app.ComponentActivity.ExtraData
 import androidx.core.content.ContextCompat.getSystemService
 import android.icu.lang.UCharacter.GraphemeClusterBreak.T
+import android.location.Address
+import android.location.Geocoder
 import android.util.Log
 import android.widget.*
 import com.google.firebase.database.*
+import com.naver.maps.map.*
 import kotlinx.android.synthetic.main.activity_map.*
+import org.naver.Map
 import org.naver.Naver
+import java.io.IOException
+
+
+
 val naver = Naver(clientId = "d9qj359o1u", clientSecret = "psvoilLoR8XETF3fLTEFKumSMwhh08BAubKmFnmR")
 
 
@@ -67,6 +72,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
 
+
+
     @UiThread
     override fun onMapReady(naverMap: NaverMap) {
 
@@ -90,12 +97,19 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
 
-
-        val markers = arrayOfNulls<Marker>(4)
+        val markers = arrayOfNulls<Marker>(4)  //찍은 지점 저장되는 마커 배열
         var count = 0
-        var sndpoint : Int = 0
-        var endpoint : LatLng = LatLng(0.000000,0.000000)
+        var endpoint : LatLng = LatLng(0.000000,0.000000) //최종 추천지점 좌표
         var markerend : Marker = Marker()
+
+        var geocLatLng : LatLng = LatLng(0.000,0.000)
+        var geocstat : Int = 0 //불러온 정보가 유효하면 1, 아니면 0
+
+        var revgeopo : String = "항공대"
+
+        var centpo : LatLng = LatLng(0.00,0.00) //무게중심
+
+
 
 
         val markerdest = Marker()
@@ -103,7 +117,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         markerdest.position = LatLng(37.5670135, 126.9783740)
         markers[3] = markerdest
 
-        fun destination(marker1:Marker?, marker2:Marker?, marker3:Marker?, marker4:Marker?){
+        /*fun destination(marker1:Marker?, marker2:Marker?, marker3:Marker?, marker4:Marker?){
             if(marker1!=null&&marker2!=null&&marker3!=null&&marker4!=null) {
                 var latitudes =
                     (marker1.position.latitude + marker2.position.latitude + marker3.position.latitude) / 3
@@ -112,7 +126,67 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                 marker4.position = LatLng(latitudes, longitudes)
                 marker4.map = naverMap
             }
+        }*/  //여기까지 3개점 무게중심 구하는 함수
+
+
+        //최대 6개까지 점 받아 무게중심 구하는 함수 -> 변수 centpo 에 좌표 저장
+        fun centgrapoint(latlan0:LatLng?,latlan1:LatLng?,latlan2:LatLng?,latlan3:LatLng?,latlan4:LatLng?,latlan5:LatLng?){
+            if(latlan0!=null&&latlan1!=null&&latlan2!=null&&latlan3!=null&&latlan4!=null&&latlan5!=null) {
+                var latitudes =
+                    (latlan0.latitude + latlan1.latitude + latlan2.latitude + latlan3.latitude + latlan4.latitude + latlan5.latitude) / 6
+                var longitudes =
+                    (latlan0.longitude + latlan1.longitude + latlan2.longitude + latlan3.longitude + latlan4.longitude + latlan5.longitude) / 6
+                centpo = LatLng(latitudes, longitudes)
+            }
+            else if(latlan0!=null&&latlan1!=null&&latlan2!=null&&latlan3!=null&&latlan4!=null&&latlan5==null){
+                var latitudes =
+                    (latlan0.latitude + latlan1.latitude + latlan2.latitude + latlan3.latitude + latlan4.latitude) / 5
+                var longitudes =
+                    (latlan0.longitude + latlan1.longitude + latlan2.longitude + latlan3.longitude + latlan4.longitude) / 5
+                centpo = LatLng(latitudes, longitudes)
+            }
+            else if(latlan0!=null&&latlan1!=null&&latlan2!=null&&latlan3!=null&&latlan4==null&&latlan5==null){
+                var latitudes =
+                    (latlan0.latitude + latlan1.latitude + latlan2.latitude + latlan3.latitude) / 4
+                var longitudes =
+                    (latlan0.longitude + latlan1.longitude + latlan2.longitude + latlan3.longitude) / 4
+                centpo = LatLng(latitudes, longitudes)
+            }
+            else if(latlan0!=null&&latlan1!=null&&latlan2!=null&&latlan3==null&&latlan4==null&&latlan5==null){
+                var latitudes =
+                    (latlan0.latitude + latlan1.latitude + latlan2.latitude) / 3
+                var longitudes =
+                    (latlan0.longitude + latlan1.longitude + latlan2.longitude) / 3
+                centpo = LatLng(latitudes, longitudes)
+            }
+            else if(latlan0!=null&&latlan1!=null&&latlan2==null&&latlan3==null&&latlan4==null&&latlan5==null){
+                var latitudes =
+                    (latlan0.latitude + latlan1.latitude) / 2
+                var longitudes =
+                    (latlan0.longitude + latlan1.longitude) / 2
+                centpo = LatLng(latitudes, longitudes)
+            }
+            else if(latlan0!=null&&latlan1==null&&latlan2==null&&latlan3==null&&latlan4==null&&latlan5==null){
+                var latitudes =
+                    (latlan0.latitude)
+                var longitudes =
+                    (latlan0.longitude)
+                centpo = LatLng(latitudes, longitudes)
+            }
+
+
         }
+
+
+
+
+
+
+
+
+
+
+
 
         fun reset(marker1:Marker?, marker2:Marker?, marker3:Marker?, marker4:Marker?){
             if(marker1!=null&&marker2!=null&&marker3!=null&&marker4!=null) {
@@ -182,7 +256,6 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             }
             datas.addValueEventListener(postListener)
         }
-
 
 
 
@@ -295,26 +368,26 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
             val markerarrlats: Array<Double> = arrayOf( //서울 주요지점 좌표
-                37.534659,37.556830,37.556003,37.540218,37.497299,37.570125,37.505441,37.504493,37.582312,37.573341,37.613127,37.580563,37.535720,37.543971
+                37.534659,37.556830,37.556003,37.540218,37.497299,37.570125,37.505441,37.504493,37.582312,37.573341,37.613127,37.580563,37.535720,37.543971,37.533909, 37.514056, 37.529860, 37.481193, 37.479380, 37.517362, 37.581168, 37.592541, 37.578304, 37.571166
             )
             val markerarrlons: Array<Double> = arrayOf(
-                126.993941,126.924531,126.936845,127.068996,127.026681,126.991239,127.004708,127.082889,126.983575,126.976816,127.030211,127.002058,126.875263,127.036595
+                126.993941,126.924531,126.936845,127.068996,127.026681,126.991239,127.004708,127.082889,126.983575,126.976816,127.030211,127.002058,126.875263,127.036595,126.901894, 126.941258, 126.964552, 126.952573, 127.011797, 127.041040, 127.048615, 127.016308, 126.900013, 127.009152
             )
 
             //아래부턴 두 지점의 거리 제곱 구해 저장하는 코드
             var i = 0
             val temArrlat: Array<Double> = arrayOf(
-                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
             )
             val temArrlon: Array<Double> = arrayOf(
-                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
             )
             val temArrsum: Array<Double> = arrayOf(
-                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+                0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00
             )
-            val numtem:Array<Int> = arrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13)
+            val numtem:Array<Int> = arrayOf(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23)
 
-            for (index in 0..13 step 1) {
+            for (index in 0..23 step 1) {
                 if (lNguser != null) {
                     temArrlat[i] = Math.pow(lNguser.position.latitude - markerarrlats[i], 2.00)
                     temArrlon[i] = Math.pow(lNguser.position.longitude - markerarrlons[i], 2.00)
@@ -329,7 +402,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             //아래부턴 저장된 값중 가장 작은값을 구하는 코드
             var j = 0
             var k = 0
-            for (index in 0..12 step 1) {
+            for (index in 0..22 step 1) {
                 if (temArrsum[j] < temArrsum[j + 1]){
                     temArrsum[j+1] = temArrsum[j]
                     numtem[k+1] = numtem[k]
@@ -337,7 +410,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                 j++
                 k++
             }
-            var rest = numtem[13] //가장 거리가 작은 값의 위치
+            var rest = numtem[23] //가장 거리가 작은 값의 위치
 
             //이하는 최종 추천장소 반환, endpoint에 좌표 저장
             if (rest == 0) {
@@ -386,7 +459,7 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
             }
             else if (rest == 11) {
                 endpoint = LatLng(markerarrlats[11], markerarrlons[11])
-                return "대학로"
+                return "대학로(혜화)"
             }
             else if (rest == 12) {
                 endpoint = LatLng(markerarrlats[12], markerarrlons[12])
@@ -396,9 +469,119 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
                 endpoint = LatLng(markerarrlats[13], markerarrlons[13])
                 return "서울숲"
             }
+            else if (rest == 14) {
+                endpoint = LatLng(markerarrlats[14], markerarrlons[14])
+                return "당산"
+            }
+            else if (rest == 15) {
+                endpoint = LatLng(markerarrlats[15], markerarrlons[15])
+                return "노량진"
+            }
+            else if (rest == 16) {
+                endpoint = LatLng(markerarrlats[16], markerarrlons[16])
+                return "용산"
+            }
+            else if (rest == 17) {
+                endpoint = LatLng(markerarrlats[17], markerarrlons[17])
+                return "서울대입구"
+            }
+            else if (rest == 18) {
+                endpoint = LatLng(markerarrlats[18], markerarrlons[18])
+                return "예술의전당"
+            }
+            else if (rest == 19) {
+                endpoint = LatLng(markerarrlats[19], markerarrlons[19])
+                return "강남구청역(청담동)"
+            }
+            else if (rest == 20) {
+                endpoint = LatLng(markerarrlats[20], markerarrlons[20])
+                return "청량리"
+            }
+            else if (rest == 21) {
+                endpoint = LatLng(markerarrlats[21], markerarrlons[21])
+                return "성신여대입구"
+            }
+            else if (rest == 22) {
+                endpoint = LatLng(markerarrlats[22], markerarrlons[22])
+                return "디지털미디어시티"
+            }
+            else if (rest == 23) {
+                endpoint = LatLng(markerarrlats[23], markerarrlons[23])
+                return "동대문"
+            }
             return "없음"
 
         }
+
+
+        //리버스 지오코딩 함수 - 좌표 넣으면 주소 반환
+        fun revGeoc(repoint:LatLng = LatLng(37.600114, 126.864815)){
+
+            val mGeoCoder : Geocoder = Geocoder(this)
+
+            val mResultList : List<Address> = mGeoCoder.getFromLocation(
+                repoint.latitude,
+                repoint.longitude,
+                1
+            )
+
+            val geocodedad : String = mResultList[0].toString()
+
+            var str1 : Int = geocodedad.indexOf(":") +2
+            var geostr1 : String = geocodedad.substring(str1 , 100)
+            var str2 : Int = geostr1.indexOf("]") +24
+            val geostr : String = geocodedad.substring(str1 , str2)
+            revgeopo = geostr
+
+            /*Toast.makeText(
+                this, geostr,
+                Toast.LENGTH_SHORT
+            ).show()*/
+
+        }
+
+
+        //var texv : TextView = findViewById<TextView>(R.id.textViewadd)
+
+        //지오코딩 함수 - 주소 넣으면 좌표 변환
+        fun GeocF(addr : String = "한국항공대학교"){
+            val mGeoCoder : Geocoder = Geocoder(this)
+
+            var resultLocation: List<Address>? = null
+
+            try {
+                resultLocation = mGeoCoder.getFromLocationName(addr, 1)
+
+            }
+            catch (e:IOException){
+                e.printStackTrace()
+                Log.d(TAG, "주소변환 실패")
+            }
+
+            if (resultLocation != null) {
+                if (resultLocation.size !=0) {
+                    var resltLat: Double = resultLocation.get(0).latitude
+                    var resltLng: Double = resultLocation.get(0).longitude
+                    geocLatLng = LatLng(resltLat, resltLng)
+                    geocstat = 1
+                }
+                else{
+                    //texv.setText("해당되는 주소 정보는 없습니다")
+                    geocstat = 0
+                }
+
+            }
+
+
+        }
+
+
+
+
+
+
+
+
 
 
 
@@ -408,14 +591,23 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
             markers[count]?.map = null
 
-            Toast.makeText(
-                this, "${coord.latitude}, ${coord.longitude}",
-                Toast.LENGTH_SHORT
-            ).show()
             var marker = Marker()
             marker.position = LatLng(coord.latitude, coord.longitude)
+
+            revGeoc(marker.position)
+
+            Toast.makeText(
+                this, revgeopo,
+                Toast.LENGTH_SHORT
+            ).show()
+
+
             marker.map = naverMap
             markers[count] = marker
+
+
+
+            /////////////////////////////////////
             //count++
             /*if (intent.hasExtra("Information")) {
                 val info = intent.getSerializableExtra("Information") as Information
@@ -429,7 +621,29 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
             }*/
 
+
+
+
+            /*val marker1 = Marker()
+            val marker2 = Marker()
+            val marker3 = Marker()
+
+
+            marker1.position = LatLng(37.534659, 126.993941)
+            marker1.map = naverMap
+            markerarr[0] = marker1
+
+            marker2.position = LatLng(37.556830, 126.924531)
+            marker2.map = naverMap
+            markerarr[1] = marker2
+
+            marker3.position = LatLng(37.556003, 126.936845)
+            marker3.map = naverMap
+            markerarr[2] = marker3*/
+
         }
+
+
 
 
 
@@ -473,6 +687,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
                 //Toast.makeText(this, info.email, Toast.LENGTH_SHORT).show()
 
+
+
             }
         }
 
@@ -499,8 +715,56 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
             }
 
+            /*//리버스 지오코딩
+            val testLG : LatLng = LatLng(37.600114, 126.864815)
+
+            val mGeoCoder : Geocoder = Geocoder(this)
+
+            val mResultList : List<Address> = mGeoCoder.getFromLocation(
+                testLG.latitude,
+                testLG.longitude,
+                1
+            )
+
+            val geocodedad : String = mResultList[0].toString()
+
+            var str1 : Int = geocodedad.indexOf(":") +2
+            var geostr1 : String = geocodedad.substring(str1 , 100)
+            var str2 : Int = geostr1.indexOf("]") +24
+            val geostr : String = geocodedad.substring(str1 , str2)
+
+            Toast.makeText(
+                this, geostr,
+                Toast.LENGTH_SHORT
+            ).show()*/
 
 
+        }
+
+
+        var Chr = findViewById<Button>(R.id.buttonCh)
+
+
+        buttonCh.setOnClickListener { //카메라 이동 버튼
+            var CamGo = searchpo.text.toString()
+            GeocF(CamGo)
+
+            if(geocstat == 1) {
+                try {
+                    val cameraUpdate = CameraUpdate.scrollTo(geocLatLng)
+                        .animate(CameraAnimation.Easing, 1200)
+                    naverMap.moveCamera(cameraUpdate)
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                    Log.d(TAG, "올바른 주소를 입력해주세요")
+                }
+            }
+            else if(geocstat ==0){
+                //texv.setText("해당되는 주소 정보는 없습니다")
+                Toast.makeText(
+                    this, "해당되는 주소 정보는 없습니다",
+                    Toast.LENGTH_SHORT).show()
+            }
 
         }
 

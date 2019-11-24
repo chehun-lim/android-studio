@@ -14,6 +14,17 @@
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="-64dp">
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="543dp"
+            android:layout_height="567dp"
+            android:layout_marginTop="412dp"
+            android:src="@drawable/im4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
 
         <Button
             android:id="@+id/nextButton"
@@ -54,6 +65,36 @@
             app:layout_constraintStart_toEndOf="@+id/signInButton"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.73" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="421dp"
+            android:layout_height="333dp"
+            android:src="@drawable/im1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="421dp"
+            android:layout_height="333dp"
+            android:layout_marginTop="220dp"
+            android:src="@drawable/im2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="421dp"
+            android:layout_height="333dp"
+            android:src="@drawable/im3_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
