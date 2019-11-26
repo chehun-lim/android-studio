@@ -103,7 +103,7 @@ class RoomActivity : AppCompatActivity() {
 
                 } else{
                     Toast.makeText(
-                        this, "Enter roomname! and Password!",
+                        this, "방 이름과 패스워드를 입력해주세요",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -163,7 +163,7 @@ class RoomActivity : AppCompatActivity() {
 
                 } else{
                     Toast.makeText(
-                        this, "Enter roomname! and Password!",
+                        this, "방 이름과 패스워드를 입력해주세요",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
