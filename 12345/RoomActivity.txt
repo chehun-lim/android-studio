@@ -1,0 +1,146 @@
+package com.swpj.projectandroid
+
+import com.swpj.projectandroid.KakaoLink.KakaoLinkProvider.sendKakaoLink
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
+import android.widget.Toast
+import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_room.*
+
+
+class RoomActivity : AppCompatActivity() {
+
+    private lateinit var database: DatabaseReference
+    private var passwordValue :String ?= ""
+    private var roomCheck :Int=0
+
+    companion object {
+        private const val TAG = "KotlinActivity"
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_room)
+
+        //파이어베이스의 데이터베이스를 담기 위한 변수
+        database = FirebaseDatabase.getInstance().reference
+
+        //roomName에서 방을 생성해 공유하기전에 다른 사용자가 방을 이미 사용하는지 여부를 알아보기 위한 리스너이다.
+        roomName.addTextChangedListener(object : TextWatcher{
+            override fun afterTextChanged(p0: Editable?) {
+
+            }
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+
+            }
+
+            //방을 생성하기 이전에 이미 이전의 다른 사용자가 이 방을 생성하여 사용하는지 않하는지를 알아보기 위한  함수이다.
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                database.child("rooms").addValueEventListener(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                        //비밀번호에 대한 정보를 저장.
+                        passwordValue = dataSnapshot.child(roomName.text.toString()).child("password").value.toString()
+
+                        //만약 사용자가 입력한 roomName이 이미 존재하면 roomCheck를 1 값을 가지고
+                        //존재하지 않을 경우에는 roomCheck 2의 값을 가진다.
+                        if (dataSnapshot.hasChild(roomName.text.toString())) {
+                            roomCheck = 1
+                        }
+                        else{
+                            roomCheck = 2
+                        }
+                    }
+                    override fun onCancelled(error: DatabaseError) {
+                        // Failed to read value
+                        Log.w(TAG, "Failed to read value.", error.toException())
+                    }
+                })
+            }
+        })
+
+        //카카오톡으로 방 공유하기 버튼을 실행한다.
+        share.setOnClickListener {
+            if (intent.hasExtra("loginInformation")) {
+
+                //roomName과 비밀번호 중 하나라도 입력하지 않으면 예외처리한다.
+                if (roomName.text.toString() != "" && password.text.toString()!= "") {
+                    val info = intent.getSerializableExtra("loginInformation") as Information
+                    info.roomName = roomName.text.toString()
+
+                    val user = miniUser(info.name, info.email)
+
+                    //roomCheck가 2인경우 새로운 방을 생성.
+                    if(roomCheck==2) {
+                        database.child("rooms").child(roomName.text.toString()).setValue(user)
+                        database.child("rooms").child(roomName.text.toString())
+                            .child("password").setValue(password.text.toString())
+
+                        //카카오톡 공유
+                        sendKakaoLink(this, info.roomName)
+                    }
+
+                    //roomcheck가 1인경우 이미 존재하는 방
+                    else if (roomCheck==1){
+                        Toast.makeText(
+                            this, "이미 있는 방입니다.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                }
+
+                //roomName과 비밀번호중 하나라도 입력하지 않을시 예외처리
+                else{
+                    Toast.makeText(
+                        this, "Enter roomname! and Password!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+        }
+
+
+        //위치 설정하기 버튼으로 방을 생성한후 자신이 생성한 방으로 들어간다.
+        map.setOnClickListener {
+            if (intent.hasExtra("loginInformation")) {
+
+                //roomName과 비밀번호 중 하나라도 입력하지 않으면 예외처리한다.
+                if (roomName.text.toString() != "" && password.text.toString()!= "") {
+
+                    //roomName의 해당하는 비밀번호가 일치하는 경우
+                    if(password.text.toString() == passwordValue  ) {
+                        val info =
+                            intent.getSerializableExtra("loginInformation") as Information
+                        info.roomName = roomName.text.toString()
+
+                        //Map_intent에 인텐트를 넘겨 MapActivity로 이동한다.
+                        val Map_intent = Intent(this, MapActivity::class.java)
+                        Map_intent.putExtra("Information", info)
+                        startActivityForResult(Map_intent, 2)
+                    }
+
+                    //비밀번호가 틀렸을 경우
+                    else{
+                        Toast.makeText(
+                            this, "Wrong Password!",
+                            Toast.LENGTH_SHORT
+                        ).show()
+
+                    }
+                }
+
+                //roomName과 비밀번호중 하나라도 입력하지 않을시 예외처리
+                else{
+                    Toast.makeText(
+                        this, "Enter roomname! and Password!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+        }
+    }
+}

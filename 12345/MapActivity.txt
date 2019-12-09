@@ -1,0 +1,773 @@
+package com.swpj.projectandroid
+
+import android.content.pm.PackageManager
+import android.graphics.Color
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.util.Log
+import androidx.annotation.UiThread
+import com.naver.maps.geometry.LatLng
+import com.naver.maps.map.overlay.Marker
+import android.location.Address
+import android.location.Geocoder
+import android.os.Looper
+import android.widget.*
+import androidx.core.app.ActivityCompat
+import com.google.android.gms.location.LocationCallback
+import com.google.android.gms.location.LocationRequest
+import com.google.android.gms.location.LocationResult
+import com.google.android.gms.location.LocationServices
+import com.google.firebase.database.*
+import com.naver.maps.map.*
+import com.naver.maps.map.overlay.Align
+import com.naver.maps.map.overlay.OverlayImage
+import com.naver.maps.map.util.MarkerIcons
+import kotlinx.android.synthetic.main.activity_map.*
+import java.io.IOException
+
+class MapActivity : AppCompatActivity(),  OnMapReadyCallback {
+
+    val TAG = "MyMessage"
+
+    private lateinit var database: DatabaseReference
+
+    var User_Num = 0 //유저 데이터 정보를 저장하고 그 정보값을 저장하기위해 User_Num을 각 사용자에 맞게 값을 주어진다.
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_map)
+
+
+        val fragment = supportFragmentManager
+        val mapFragment = fragment.findFragmentById(R.id.map) as MapFragment?
+            ?: MapFragment.newInstance().also {
+                fragment.beginTransaction().add(R.id.map, it).commit()
+            }
+        mapFragment.getMapAsync(this)
+    }
+
+
+
+    @UiThread
+    override fun onMapReady(naverMap: NaverMap) {
+        //파이어베이스데이터베이스 정보를 가져오기 위한 instance
+        database = FirebaseDatabase.getInstance().reference
+
+
+        val User_markers = arrayOfNulls<Marker>(4)//배열 4짜리로 저장한 후 사용자들의 정보를 저장하는 변수
+        var endpoint = LatLng(0.000000,0.000000) //최종 추천지점 좌표
+        var markerend = Marker()//사용자의 마커모양을 넣을 좌표 (markerResult의 정보를 저장한후에 표현)
+        var geocLatLng = LatLng(0.000,0.000)
+        var geocstat = 0 //불러온 정보가 유효하면 1, 아니면 0
+        val markerResult = Marker()//최종 마커 표시
+        var clickMarker = Marker()//클릭했을때 마커
+        val markerdest = Marker()//마커의 목적지
+        var roomm = ""//방 생성 초기화
+        var inr = 0
+        var fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+        val Gps_marker = Marker() //GPS에 사용하기 위한 변수
+
+
+        markerdest.position = LatLng(37.5670135, 126.9783740)
+        User_markers[3] = markerdest
+        clickMarker.position = LatLng(0.00, 0.00)
+
+
+        //위치 추적을 사용하기위한 initLocation 함수
+        fun initLocation() {
+            if (ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                return
+            }
+
+            fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+            fusedLocationClient.lastLocation
+                .addOnSuccessListener { location ->
+                    if(location == null) {
+                        Log.e(TAG, "location get fail")
+                    } else {
+                        Log.d(TAG, "${location.latitude} , ${location.longitude}")
+                    }
+                }
+                .addOnFailureListener {
+                    Log.e(TAG, "location error is ${it.message}")
+                    it.printStackTrace()
+                }
+        }
+
+        //GPS 사용시 marker를 계속 리셋하여 업데이트 하기위한 함수.
+        fun resetOne(marker: Marker?) {
+            if (marker != null) {
+                marker.map = null
+            } else {
+                marker?.map = null
+            }
+        }
+
+        fun findwaysnd(lNguser: Marker?): String { //주어진 거점과 가장 가까운 지점 지명을 반환
+            val markerarrlats: Array<Double> = arrayOf( //서울 주요지점 좌표
+                37.534659,
+                37.556830,
+                37.556003,
+                37.540218,
+                37.497299,
+                37.570125,
+                37.505441,
+                37.504493,
+                37.582312,
+                37.573341,
+                37.613127,
+                37.580563,
+                37.535720,
+                37.543971
+            )
+            val markerarrlons: Array<Double> = arrayOf(
+                126.993941,
+                126.924531,
+                126.936845,
+                127.068996,
+                127.026681,
+                126.991239,
+                127.004708,
+                127.082889,
+                126.983575,
+                126.976816,
+                127.030211,
+                127.002058,
+                126.875263,
+                127.036595
+            )
+
+            //아래부턴 두 지점의 거리 제곱 구해 저장하는 코드
+            var i = 0
+            val temArrlat: Array<Double> = arrayOf(
+                0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+            )
+            val temArrlon: Array<Double> = arrayOf(
+                0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+            )
+            val temArrsum: Array<Double> = arrayOf(
+                0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00
+            )
+            val numtem: Array<Int> = arrayOf(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13)
+
+            for (index in 0..13 step 1) {
+                if (lNguser != null) {
+                    temArrlat[i] = Math.pow(lNguser.position.latitude - markerarrlats[i], 2.00)
+                    temArrlon[i] = Math.pow(lNguser.position.longitude - markerarrlons[i], 2.00)
+                    temArrsum[i] = temArrlat[i] + temArrlon[i]
+                } else {
+                    break
+                }
+                i++
+            }
+            //아래부턴 저장된 값중 가장 작은값을 구하는 코드
+            var j = 0
+            var k = 0
+            for (index in 0..12 step 1) {
+                if (temArrsum[j] < temArrsum[j + 1]) {
+                    temArrsum[j + 1] = temArrsum[j]
+                    numtem[k + 1] = numtem[k]
+                }
+                j++
+                k++
+            }
+            val rest = numtem[13] //가장 거리가 작은 값의 위치
+
+            //이하는 최종 추천장소 반환, endpoint에 좌표 저장
+            when (rest) {
+                0 -> {
+                    endpoint = LatLng(markerarrlats[0], markerarrlons[0])
+                    return "이태원"
+                }
+                1 -> {
+                    endpoint = LatLng(markerarrlats[1], markerarrlons[1])
+                    return "홍대입구"
+                }
+                2 -> {
+                    endpoint = LatLng(markerarrlats[2], markerarrlons[2])
+                    return "신촌"
+                }
+                3 -> {
+                    endpoint = LatLng(markerarrlats[3], markerarrlons[3])
+                    return "건대입구"
+                }
+                4 -> {
+                    endpoint = LatLng(markerarrlats[4], markerarrlons[4])
+                    return "강남역"
+                }
+                5 -> {
+                    endpoint = LatLng(markerarrlats[5], markerarrlons[5])
+                    return "종로"
+                }
+                6 -> {
+                    endpoint = LatLng(markerarrlats[6], markerarrlons[6])
+                    return "고속버스터미널"
+                }
+                7 -> {
+                    endpoint = LatLng(markerarrlats[7], markerarrlons[7])
+                    return "잠실"
+                }
+                8 -> {
+                    endpoint = LatLng(markerarrlats[8], markerarrlons[8])
+                    return "북촌한옥마을"
+                }
+                9 -> {
+                    endpoint = LatLng(markerarrlats[9], markerarrlons[9])
+                    return "광화문"
+                }
+                10 -> {
+                    endpoint = LatLng(markerarrlats[10], markerarrlons[10])
+                    return "미아사거리"
+                }
+                11 -> {
+                    endpoint = LatLng(markerarrlats[11], markerarrlons[11])
+                    return "대학로(혜화)"
+                }
+                12 -> {
+                    endpoint = LatLng(markerarrlats[12], markerarrlons[12])
+                    return "목동"
+                }
+                13 -> {
+                    endpoint = LatLng(markerarrlats[13], markerarrlons[13])
+                    return "서울숲"
+                }
+                14 -> {
+                    endpoint = LatLng(markerarrlats[14], markerarrlons[14])
+                    return "당산"
+                }
+                15 -> {
+                    endpoint = LatLng(markerarrlats[15], markerarrlons[15])
+                    return "노량진"
+                }
+                16 -> {
+                    endpoint = LatLng(markerarrlats[16], markerarrlons[16])
+                    return "용산"
+                }
+                17 -> {
+                    endpoint = LatLng(markerarrlats[17], markerarrlons[17])
+                    return "서울대입구"
+                }
+                18 -> {
+                    endpoint = LatLng(markerarrlats[18], markerarrlons[18])
+                    return "예술의전당"
+                }
+                19 -> {
+                    endpoint = LatLng(markerarrlats[19], markerarrlons[19])
+                    return "강남구청역(청담동)"
+                }
+                20 -> {
+                    endpoint = LatLng(markerarrlats[20], markerarrlons[20])
+                    return "청량리"
+                }
+                21 -> {
+                    endpoint = LatLng(markerarrlats[21], markerarrlons[21])
+                    return "성신여대입구"
+                }
+                22 -> {
+                    endpoint = LatLng(markerarrlats[22], markerarrlons[22])
+                    return "디지털미디어시티"
+                }
+                23 -> {
+                    endpoint = LatLng(markerarrlats[23], markerarrlons[23])
+                    return "동대문"
+                }
+                else -> return "없음"
+            }
+
+        }
+
+        //destination 최종 장소 추천을 보여주는 함수이다.
+        //User_marker들의 좌표값을 종합하여 최종 목적지인 dest_marker의 좌표를 구하는 함수이다.
+        fun destination(User_marker1: Marker?, User_marker2: Marker?, User_marker3: Marker?, dest_marker: Marker?) {
+            if (User_marker1 != null && User_marker2 != null && User_marker3 != null && dest_marker != null ) {
+                val latitudes =
+                    (User_marker1.position.latitude + User_marker2.position.latitude + User_marker3.position.latitude) / 3
+                val longitudes =
+                    (User_marker1.position.longitude + User_marker2.position.longitude + User_marker3.position.longitude) / 3
+                dest_marker.position = LatLng(latitudes, longitudes)
+                dest_marker.map = naverMap
+
+                val savepoint = findwaysnd(User_markers[3]) //최종 추천장소 이름
+                Toast.makeText(
+                    this, "${savepoint}",
+                    Toast.LENGTH_SHORT
+                ).show()
+                markerResult.icon = MarkerIcons.BLACK
+                markerResult.iconTintColor = Color.CYAN
+                markerResult.captionText = "최종추천"
+                markerResult.setCaptionAligns(Align.Top)
+                markerResult.position = endpoint //endpoint가 최종 추천장소
+                markerResult.map = naverMap
+                markerend = markerResult
+                if (intent.hasExtra("Information")) {
+                    val info = intent.getSerializableExtra("Information") as Information
+                    val user = User(info.name, info.email, endpoint.latitude, endpoint.longitude)
+                    database.child("rooms").child(info.roomName).child(info.name).setValue(user)
+
+                    //Toast.makeText(this, info.email, Toast.LENGTH_SHORT).show()
+
+                }
+            }else if(User_marker1 != null && User_marker2 != null && User_marker3 == null && dest_marker != null){
+                val latitudes =
+                    (User_marker1.position.latitude + User_marker2.position.latitude) / 2
+                val longitudes =
+                    (User_marker1.position.longitude + User_marker2.position.longitude) / 2
+                dest_marker.position = LatLng(latitudes, longitudes)
+                dest_marker.map = naverMap
+
+                val savepoint = findwaysnd(User_markers[3]) //최종 추천장소 이름
+                Toast.makeText(
+                    this, "${savepoint}",
+                    Toast.LENGTH_SHORT
+                ).show()
+                markerResult.icon = MarkerIcons.BLACK
+                markerResult.iconTintColor = Color.CYAN
+                markerResult.captionText = "최종추천"
+                markerResult.setCaptionAligns(Align.Top)
+                markerResult.position = endpoint //endpoint가 최종 추천장소
+                markerResult.map = naverMap
+                markerend = markerResult
+                if (intent.hasExtra("Information")) {
+                    val info = intent.getSerializableExtra("Information") as Information
+                    val user = User(info.name, info.email, endpoint.latitude, endpoint.longitude)
+                    database.child("rooms").child(info.roomName).child(info.name).setValue(user)
+
+                    //Toast.makeText(this, info.email, Toast.LENGTH_SHORT).show()
+
+                }
+            } else{
+                Toast.makeText(
+                    this, "다른 사람이 위치를 지정할 때까지 기다려주세요",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        //지오 코드
+        fun revGeoc(repoint:LatLng = LatLng(37.600114, 126.864815)){
+            val mGeoCoder : Geocoder = Geocoder(this)
+            val mResultList : List<Address>
+
+            mResultList = mGeoCoder.getFromLocation(
+                repoint.latitude,
+                repoint.longitude,
+                10
+            )
+
+            val geocodedad : String
+            geocodedad = mResultList[0].toString()
+
+            val str1 : Int = geocodedad.indexOf(":") +2
+            val geostr1 : String = geocodedad.substring(str1 , 100)
+            val str2 : Int = geostr1.indexOf("]") +24
+            val geostr : String
+            geostr = geocodedad.substring(str1 , str2)
+
+            Toast.makeText(
+                this, geostr,
+                Toast.LENGTH_SHORT
+            ).show()
+
+        }
+
+        //지오코딩 함수 - 주소 넣으면 좌표 변환
+        fun Geo_move(addr : String = "한국항공대학교"){
+            val mGeoCoder : Geocoder = Geocoder(this)
+            var resultLocation: List<Address>? = null
+
+            try {
+                resultLocation = mGeoCoder.getFromLocationName(addr, 1)
+            }
+
+            catch (e: IOException){
+                e.printStackTrace()
+                Log.d(TAG, "주소변환 실패")
+            }
+
+            if (resultLocation != null) {
+                if (resultLocation.size !=0) {
+                    val resltLat: Double = resultLocation.get(0).latitude
+                    val resltLng: Double = resultLocation.get(0).longitude
+                    geocLatLng = LatLng(resltLat, resltLng)
+                    geocstat = 1
+                }
+                else{
+                    //texv.setText("해당되는 주소 정보는 없습니다")
+                    geocstat = 0
+                }
+            }
+        }
+
+
+        //사용자 자신이 네이버 맵 지도에 클릭을 하면 마커를 표시해주는 리스너이다.
+        naverMap.setOnMapClickListener { point, coord ->
+
+            clickMarker.map = null
+
+            Toast.makeText(
+                this, "${coord.latitude}, ${coord.longitude}",
+                Toast.LENGTH_SHORT
+            ).show()
+            val User_marker = Marker()
+            User_marker.icon = MarkerIcons.BLACK
+            User_marker.iconTintColor = Color.YELLOW
+            User_marker.captionText = "나"
+            User_marker.setCaptionAligns(Align.Top)
+            User_marker.position = LatLng(coord.latitude, coord.longitude)
+            revGeoc(User_marker.position)
+            User_marker.map = naverMap
+            clickMarker = User_marker
+        }
+
+        //마커 표시를 하기위해 사용자로 부터 가져온 데이터를 저장후 모든 사용자에게 마커 표시를 보여주기 위한 자신의 고유 숫자값
+        //예) 홍길동이 1번째로 들어오면 홍길동의 1번 값만 가지고 데이터를 저장하거나 지울면 된다.
+        if (intent.hasExtra("Information")) {
+            val info = intent.getSerializableExtra("Information") as Information
+            roomm = info.roomName
+            database.child("rooms").child(info.roomName)
+                .addListenerForSingleValueEvent(object : ValueEventListener {
+                    override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                        //haschild는 데이터를 가져왔을떄 하위 데이터가 있는지 없는지에대한 여부를 판단하는 함수이다.
+                        //1번과 2번방이 비어있을 경우 3이란 숫자값을 가진다.
+                        if (dataSnapshot.hasChild("1") && dataSnapshot.hasChild("2") && dataSnapshot.child(
+                                "2"
+                            ).child("email").value != info.email && dataSnapshot.child("1").child("email").value != info.email
+                        ) {
+                            User_Num = 3 //3번에 들어가는 코드
+                            val user = User(info.name, info.email)
+                            database.child("rooms").child(info.roomName).child("3").setValue(user)
+                        }
+                        //1번 방이 비어있을 경우 2란 숫자값을 가진다.
+                        else if (dataSnapshot.hasChild("1") && dataSnapshot.child("1").child("email").value != info.email) {
+                            User_Num = 2 //2번에 들어가는 코드
+                            val user = User(info.name, info.email)
+                            database.child("rooms").child(info.roomName).child("2").setValue(user)
+                        } else {
+                            User_Num = 1 //1번에 들어가는 코드
+                            val user = User(info.name, info.email)
+                            database.child("rooms").child(info.roomName).child("1").setValue(user)
+                        }
+                    }
+
+                    override fun onCancelled(databaseError: DatabaseError) {
+                        // Getting Post failed, log a message
+                        Log.w(TAG, "loadPost:onCancelled", databaseError.toException())
+                        // ...
+                    }
+                })
+        }
+        //마커 아이콘 빨강
+        val User_marker1 = Marker()//다른 사용자의 정보를 담기 위한 마커1
+        User_marker1.icon = MarkerIcons.BLACK
+        User_marker1.iconTintColor = Color.RED
+        User_marker1.setCaptionAligns(Align.Top)
+
+        //마커 아이콘 검정
+        val User_marker2 = Marker()//다른 사용자의 정보를 담기 위한 마커2
+        User_marker2.icon = MarkerIcons.BLACK
+        User_marker2.iconTintColor = Color.BLUE
+        User_marker2.setCaptionAligns(Align.Top)
+
+
+        //다른 사용자가 출발지 설정을 변경 할 경우 해당하는 사용자의 마커의 위치를 변경하는 리스너이다.
+        //
+        database.child("rooms").child(roomm)
+            .addValueEventListener(object : ValueEventListener {
+                override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                    //사용자 자신의 User_Num이 1일 경우.
+                    if(User_Num==1) {
+
+                        //사용자 자신이 방에 접속할때 자신의 맞는 User_Num을 받는다.
+                        //사용자 자신의 User_num에만 데이터를 업데이트 및 지우기를 할 수 있다.
+                        //hasChild(data)의 데이터를 가져올때 (data)가 있는지 없는지에 대한 여부를 판단하는 함수이다.
+                        if (dataSnapshot.hasChild("2") && dataSnapshot.hasChild("3")) {
+                            User_marker1.captionText = dataSnapshot.child("2").child("username").value.toString()
+                            val value1 = dataSnapshot.child("2").child("latitude").value
+                            val value2 = dataSnapshot.child("2").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker2.captionText = dataSnapshot.child("3").child("username").value.toString()
+                            val value3 = dataSnapshot.child("3").child("latitude").value
+                            val value4 = dataSnapshot.child("3").child("longitude").value
+                            User_marker2.position = LatLng(value3.toString().toDouble(), value4.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+
+                            User_marker2.map = naverMap
+                            User_markers[2] = User_marker2
+                        }
+
+                        //현재 사용자가 1이고 2등만 있을 경우
+                        else if(dataSnapshot.hasChild("2")){
+                            User_marker1.captionText = dataSnapshot.child("2").child("username").value.toString()
+                            val value1 = dataSnapshot.child("2").child("latitude").value
+                            val value2 = dataSnapshot.child("2").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        }
+
+                        //현재 사용자가 1이고 3등만 있을 경우
+                        else if(dataSnapshot.hasChild("3")){
+                            User_marker1.captionText = dataSnapshot.child("3").child("username").value.toString()
+                            val value1 = dataSnapshot.child("3").child("latitude").value
+                            val value2 = dataSnapshot.child("3").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        }
+                    }
+
+                    //사용자 자신의 User_Num이 2일 경우.
+                    else if(User_Num==2){
+                        if (dataSnapshot.hasChild("1") && dataSnapshot.hasChild("3")) {
+                            User_marker1.captionText = dataSnapshot.child("1").child("username").value.toString()
+                            val value1 = dataSnapshot.child("1").child("latitude").value
+                            val value2 = dataSnapshot.child("1").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker2.captionText = dataSnapshot.child("3").child("username").value.toString()
+                            val value3 = dataSnapshot.child("3").child("latitude").value
+                            val value4 = dataSnapshot.child("3").child("longitude").value
+                            User_marker2.position = LatLng(value3.toString().toDouble(), value4.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+
+                            User_marker2.map = naverMap
+                            User_markers[2] = User_marker2
+                        } else if(dataSnapshot.hasChild("1")){
+                            User_marker1.captionText = dataSnapshot.child("1").child("username").value.toString()
+                            val value1 = dataSnapshot.child("1").child("latitude").value
+                            val value2 = dataSnapshot.child("1").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        } else if(dataSnapshot.hasChild("3")){
+                            User_marker1.captionText = dataSnapshot.child("3").child("username").value.toString()
+                            val value1 = dataSnapshot.child("3").child("latitude").value
+                            val value2 = dataSnapshot.child("3").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        }
+
+                    }
+
+                    //사용자 자신의 User_Num이 3일 경우
+                    else if(User_Num==3) {
+                        if (dataSnapshot.hasChild("1") && dataSnapshot.hasChild("2")) {
+                            User_marker1.captionText = dataSnapshot.child("1").child("username").value.toString()
+                            val value1 = dataSnapshot.child("1").child("latitude").value
+                            val value2 = dataSnapshot.child("1").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker2.captionText = dataSnapshot.child("2").child("username").value.toString()
+                            val value3 = dataSnapshot.child("2").child("latitude").value
+                            val value4 = dataSnapshot.child("2").child("longitude").value
+                            User_marker2.position = LatLng(value3.toString().toDouble(), value4.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+
+                            User_marker2.map = naverMap
+                            User_markers[2] = User_marker2
+                        } else if (dataSnapshot.hasChild("1")) {
+                            User_marker1.captionText = dataSnapshot.child("1").child("username").value.toString()
+                            val value1 = dataSnapshot.child("1").child("latitude").value
+                            val value2 = dataSnapshot.child("1").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        } else if (dataSnapshot.hasChild("2")) {
+                            User_marker1.captionText = dataSnapshot.child("2").child("username").value.toString()
+                            val value1 = dataSnapshot.child("2").child("latitude").value
+                            val value2 = dataSnapshot.child("2").child("longitude").value
+                            User_marker1.position = LatLng(value1.toString().toDouble(), value2.toString().toDouble())
+
+                            User_marker1.map = naverMap
+                            User_markers[1] = User_marker1
+                            User_markers[2] = null
+                        }
+                    }
+                }
+
+                //리스너가 취소될 경우
+                override fun onCancelled(databaseError: DatabaseError) {
+                    // Getting Post failed, log a message
+                    Log.w(TAG, "loadPost:onCancelled", databaseError.toException())
+                    // ...
+                }
+            })
+
+        //장소 추천 버튼
+        //장소 추천 버튼을 눌러 무게중심과 사용자들의 장소를 추천한다.
+        push_button.setOnClickListener {
+
+            //현재 자기자신이 출발지 설정을 안했으면 출발지를 설정하라는 메세지를 알린다.
+            if(User_markers[0]?.map==null || User_markers[0]?.position?.latitude ==0.00){
+                Toast.makeText(
+                    this, "자신의 출발지를 설정해주세요",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+            //자기 자신과 다른사람이 장소를 전부 설정했으면 destination 함수를 호출하고 무게 중심과 최종 추천 장소를 알려준다.
+            else if(User_markers[1]?.position?.latitude!=0.00 && User_markers[2]?.position?.latitude!=0.00) {
+                destination(User_markers[0], User_markers[1], User_markers[2], User_markers[3]) //1차 최단거리장소
+            }
+
+            //다른 사람이 장소 설정을 할때까지 예외처리 알림
+            else {
+                Toast.makeText(
+                    this, "다른 사람이 위치를 지정할 때까지 기다려주세요",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+
+        }
+
+        //다시하기 버튼
+        //자기 자신이 장소 출발지 설정을 다시하고싶을때 쓰는 버튼이다.
+        Reset_button.setOnClickListener {
+
+            resetOne(markerend)
+            resetOne(User_markers[3])
+            resetOne(clickMarker)
+            resetOne(Gps_marker)
+
+            //사용자 자신의 정보를 저장하는 데이터베이스인 User_Num에 정보를 전부 0으로 초기화 한다.
+            if (intent.hasExtra("Information")) {
+                val info = intent.getSerializableExtra("Information") as Information
+                database.child("rooms").child(info.roomName).child(User_Num.toString()).child("latitude").setValue("0")
+                database.child("rooms").child(info.roomName).child(User_Num.toString()).child("longitude").setValue("0")
+            }
+        }
+
+
+        //출발지 설정 버튼
+        //마커로 장소를 표시하고 파이어베이스 데이터에 정보를 기입하는 리스너이다.
+        Setting_button.setOnClickListener {
+            if (intent.hasExtra("Information")) {
+                val info = intent.getSerializableExtra("Information") as Information
+                val user = User(info.name, info.email, clickMarker.position.latitude, clickMarker.position.longitude)
+
+                //사용자 자신의 정보를 저장하는 데이터베이스인 User_Num에 정보를 저장함으로써 출발지 설정을 한다.
+                when (User_Num) {
+                    2 -> {
+                        database.child("rooms").child(info.roomName).child("2").setValue(user)
+                        User_markers[0] = clickMarker
+                    }
+                    1 -> {
+                        database.child("rooms").child(info.roomName).child("1").setValue(user)
+                        User_markers[0] = clickMarker
+                    }
+                    3 -> {
+                        database.child("rooms").child(info.roomName).child("3").setValue(user)
+                        User_markers[0] = clickMarker
+                    }
+                    //Toast.makeText(this, info.email, Toast.LENGTH_SHORT).show()
+                }
+                //Toast.makeText(this, info.email, Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        //지도 검색 기능
+        Serch_button.setOnClickListener { //카메라 이동 버튼
+            val Camera = searchpo.text.toString()
+            Geo_move(Camera)
+
+            //틀린 주소를 입력할 경우
+            if(geocstat == 1) {
+                try {
+                    val cameraUpdate = CameraUpdate.scrollTo(geocLatLng)
+                        .animate(CameraAnimation.Easing, 1200)
+                    naverMap.moveCamera(cameraUpdate)
+                } catch (e: IOException) {
+                    e.printStackTrace()
+                    Log.d(TAG, "올바른 주소를 입력해주세요")
+                }
+            }
+
+            //주소의 정보가 없는 경우
+            else if(geocstat ==0){
+                //texv.setText("해당되는 주소 정보는 없습니다")
+                Toast.makeText(
+                    this, "해당되는 주소 정보는 없습니다",
+                    Toast.LENGTH_SHORT).show()
+            }
+
+        }
+
+        //위치 추적
+        //자기 자신의 위치를 실시간으로 알려준다.
+        GPS_button.setOnClickListener {
+
+            Toast.makeText(
+                this, "위치 추적을 시작합니다",
+                Toast.LENGTH_SHORT
+            ).show()
+
+            initLocation()
+
+            val locationRequest = LocationRequest.create()
+            locationRequest.run {
+                priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+                interval = 60 * 1000
+            }
+
+            //콜백 함수 자신의 위치를 계속 추적하기위해 쓰인 함수
+            val locationCallback = object: LocationCallback() {
+                override fun onLocationResult(locationResult: LocationResult?) {
+                    locationResult?.let {
+                        resetOne(Gps_marker)
+                        for((i, location) in it.locations.withIndex()) {
+                            Log.d(TAG, "#$i ${location.latitude} , ${location.longitude}")
+
+
+                            Gps_marker.position = LatLng(location.latitude, location.longitude)
+                            Gps_marker.icon = OverlayImage.fromResource(R.drawable.dddd)
+                            Gps_marker.width = 160
+                            Gps_marker.height =160
+                            Gps_marker.map = naverMap
+
+                            if(inr==0){
+                                val cameraUpdate = CameraUpdate.scrollTo(LatLng(location.latitude, location.longitude))
+                                    .animate(CameraAnimation.Easing, 1200)
+                                naverMap.moveCamera(cameraUpdate)
+                                inr++
+                            }
+                        }
+                    }
+                }
+            }
+            fusedLocationClient.requestLocationUpdates(locationRequest, locationCallback, Looper.myLooper())
+
+        }
+    }
+
+    //안드로이드 뒤로가기 버튼 클릭시 사용자 정보를 지우는 함수
+    override fun onBackPressed() {
+        super.onBackPressed()
+
+        if (intent.hasExtra("Information")) {
+            val info = intent.getSerializableExtra("Information") as Information
+            database.child("rooms").child(info.roomName).child(User_Num.toString()).removeValue()
+        }
+
+    }
+}
